@@ -5,13 +5,13 @@ let handler = async (m, { isOwner, isAdmin, conn, text, participants, args, comm
     }
     let groupname = await conn.getName(m.chat)
     let membercount = participants.length
-    let oi1 = `*⬤🦂╎ جـروب : *○'${groupname}'*`
+    let oi1 = `*⬤🦂╎ جـروب : *○${groupname}*`
     let oi2 = `⬤🦂╎ الاعـضـاء : *○${membercount}*`
-    let teks = `*منش👾 🌸 جماعي* \n\n ${oi1}\n${oi2}\n\n*🌿┇الجروب :⇣*\n`
+    let teks = `*منشن جماعي✨🦋*${oi1}\n${oi2}\n\n*🌿┇الجروب :⇣*\n`
     for (let mem of participants) {
         teks += `*◯🍒╎* @${mem.id.split('@')[0]}\n`
     }
-    teks += `*𝑯𝑼 𝑻𝑨𝑶_𝑩𝑶𝑻*\n\n*▌│█║▌║▌║║▌║▌║▌║█*`
+    teks += `*𝑯𝑼 𝑻𝑨𝑶_𝑩𝑶𝑻*\n*▌│█║▌║▌║║▌║▌║▌║█*`
     conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) })
 }
 handler.help = ['tagall <mesaje>', 'invocar <mesaje>']
