@@ -133,8 +133,8 @@ function _0x165a(_0x126caf, _0x4b4a8d) {
     };
     return _0x165a(_0x126caf, _0x4b4a8d);
 }
-global['md'] = 'https://chat.whatsapp.com/JXZC2TWCc5rIhSKP7WPaBz';
-global['mysticbot'] = 'https://chat.whatsapp.com/JXZC2TWCc5rIhSKP7WPaBz';
+global['md'] = 'https://chat.whatsapp.com/HzfsFIfYTj7HdjbekZPfIT';
+global['mysticbot'] = 'https://chat.whatsapp.com/HzfsFIfYTj7HdjbekZPfIT';
 global.waitt = '*⌛ _جاري التحميل..._*\n\n*▰▰▰▱▱▱▱▱*';
 global.waittt = '*⌛ _جاري التحميل..._*\n\n*▰▰▰▱▱▱▱▱*';
 global.waitttt = '*⌛ _جاري التحميل..._*\n\n*▰▰▰▱▱▱▱▱*';
