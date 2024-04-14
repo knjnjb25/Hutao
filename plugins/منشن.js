@@ -7,7 +7,7 @@ let handler = async (m, { isOwner, isAdmin, conn, text, participants, args, comm
     let membercount = participants.length
     let oi1 = `*⬤🦂╎ جـروب : *○${groupname}*`
     let oi2 = `⬤🦂╎ الاعـضـاء : *○${membercount}*`
-    let teks = `*منشن جماعي✨🦋*${oi1}\n${oi2}\n\n*🌿┇الجروب :⇣*\n`
+    let teks = `*منشن جماعي✨🦋*\n${oi1}\n${oi2}\n\n*🌿┇الجروب :⇣*\n`
     for (let mem of participants) {
         teks += `*◯🍒╎* @${mem.id.split('@')[0]}\n`
     }
