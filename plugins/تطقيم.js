@@ -1,19 +1,13 @@
-const fetch = require("node-fetch");
-
-let handler = async (m, { conn }) => {
-  let data = await (await fetch('https://raw.githubusercontent.com/Afghhjjkoo/GURU-BOT/main/lib/%D8%B7%D9%82%D9%85%20%D8%AD%D8%A8.json')).json();
-  let cita = data[Math.floor(Math.random() * data.length)];
-
-  let cowi = await(await fetch(cita.cowo)).buffer();
-  await conn.sendFile(m.chat, cowi, '', 'ا╰━⧠━──━⧈⇓《🌸𝐇𝐔 𝐓𝐀𝐎🌸》⇓⧈━─━⧠', m);
-
-  let ciwi = await(await fetch(cita.cewe)).buffer();
-  await conn.sendFile(m.chat, ciwi, '', 'ا╰━⧠━──━⧈⇓《🌸𝐇𝐔 𝐓𝐀𝐎🌸》⇓⧈━─━⧠', m);
-};
-
-handler.help = ['Miku bot'];
-handler.tags = ['Miku bot'];
-handler.command = /^طقم|تطقيم$/i;
-handler.limit = true;
-
-module.exports = handler;
+import fetch from 'node-fetch'
+let handler = async (m, { conn, command }) => {
+let res = await fetch(`https://api.lolhuman.xyz/api/random/ppcouple?apikey=${lolkeysapi}`)
+if (res.status != 200) throw await res.text()
+let json = await res.json()
+if (!json.status) throw json
+conn.sendButton(m.chat, '*⧠━─━⧈⇓《🌸𝑯𝑼 𝑻𝑨𝑶_𝑩𝑶𝑻🌸》⇓⧈━─━⧠*', wm, json.result.female, [['🔄 الصورة التالية 🔄', `/${command}`]], m)
+conn.sendButton(m.chat, '*⧠━─━⧈⇓《🌸𝑯𝑼 𝑻𝑨𝑶_𝑩𝑶𝑻🌸》⇓⧈━─━⧠*', wm, json.result.male, [['🔄 الصورة التالية 🔄', `/${command}`]], m)
+}
+handler.help = ['ppcouple']
+handler.tags = ['internet']
+handler.command = /^(طقم|تطقيم)$/i
+export default handler
