@@ -87,8 +87,8 @@ let handler = async (m, {
             return _0x5a1d(_0x1b92fa, _0x42ca62);
         }
 
-          function _0x42ca() {
-            const _0xe1e20e = ['2409147cMTtvV', '70SxKSwY', 'trim', '2708027tOnEUS', '831853GQAjyu', '6ZrUjVF', '𝑴𝑨𝑹𝑺', '406070MLYaeB', 'https://chat.whatsapp.com/HzfsFIfYTj7HdjbekZPfIT', '4YbGMkZ', '840496IPJeXP', '322835aPaRGc', 'VIDEO', '3639410cLSfPv', 'sender', '9LtUyCF'];
+      function _0x42ca() {
+        const _0xe1e20e = ['2409147cMTtvV', '70SxKSwY', 'trim', '2708027tOnEUS', '831853GQAjyu', '6ZrUjVF', '𝑴𝑨𝑹𝑺', '406070MLYaeB', 'https://chat.whatsapp.com/HzfsFIfYTj7HdjbekZPfIT', '4YbGMkZ', '840496IPJeXP', '322835aPaRGc', 'VIDEO', '3639410cLSfPv', 'sender', '9LtUyCF'];
             _0x42ca = function () {
                 return _0xe1e20e;
             };
@@ -146,4 +146,4 @@ function clockString(ms) {
     let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
     let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
     return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
-          
+            }
