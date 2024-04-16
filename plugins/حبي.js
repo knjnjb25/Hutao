@@ -18,4 +18,4 @@ handler.help = ['formarpareja']
 handler.tags = ['main', 'fun']
 handler.command = ['حبي']
 handler.group = true
-export default handle
+export default handler
